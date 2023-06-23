@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    background: black;
+}
+.white-text * {
+    color: white;
+}
+* {
+    box-sizing: border-box;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1.5px;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+}
+body,p {
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+section.wrapper {
+    max-width: 650px;
+}
+.form-wrapper {
+    background: #292929;
+    border-radius: 5px;
+}
+form {
+    display: flex;
+    line-height: 0;
+    padding: 8px 8px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="submit"] {
+    background: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+input#email {
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+.form-field {
+    width: 100%;
+}
+.text-center {
+    text-align: center;
+}
+img.word-logo {
+    width: 300px;
+}
+img.icon-img {
+    width: 100px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
