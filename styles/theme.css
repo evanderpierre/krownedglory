@@ -124,7 +124,9 @@ div#notice p {
     input {
         height: 50px !important;
         padding: 0px !important;
-        border-radius: 0px  !important;
+        border-radius: 0  !important;
+        -webkit-appearance: none !important;
+
     }
   }
   
