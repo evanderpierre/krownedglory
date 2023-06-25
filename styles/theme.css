@@ -35,36 +35,56 @@ body,p {
 section.wrapper {
     max-width: 650px;
 }
-.form-wrapper {
-    background: #292929;
-    border-radius: 5px;
-}
+
 form {
-    display: flex;
+    display: block;
     line-height: 0;
-    padding: 8px 8px;
-    justify-content: space-between;
-    align-items: center;
 }
 
 input[type="submit"] {
-    background: white;
+    background: #f7d03f;
     border: none;
     padding: 15px 25px;
-    border-radius: 3px;
     font-weight: bold;
     cursor: pointer;
+    color: black;
+    margin-top: 15px;
+    font-family: 'Heebo', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .6s;
+
+}
+input[type="submit"]:hover {
+    color: white;
+    background: black;
+    border: 4px solid #f7d03f;
+    transition: .6s;
+
 }
 input#email {
     height: 45px;
     width: 100%;
-    background: transparent;
+    background: white;
     border: none;
-    color: white;
-}
+    color: black;
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    font-size: 16px;
 
-.form-field {
+
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+.form-wrapper {
+    width: 500px;
+}
+.form-field * {
     width: 100%;
+
 }
 .text-center {
     text-align: center;
@@ -82,3 +102,29 @@ img.icon-img {
 .hide{
     display: none;
 }
+
+/*Shimmer*/
+.border {
+    position: absolute;
+    display: block;
+    top: -50%;
+    left: -50%;
+    z-index: -9;
+    display: block;
+    height: 200%;
+    width: 200%;
+    transform: rotate(-45deg);
+    overflow: hidden;
+    background: linear-gradient(to right, #fff 20%, #fff 40%, #ECD08C 50%, #ECD08C 55%, #fff 70%, #fff 100%);
+    background-size: 200% auto;
+    
+    animation: shine 3s linear infinite;
+  }
+  
+  /*Begin shimmer code*/
+  
+  @keyframes shine {
+      to {
+        background-position: 200% center;
+      }
+    }fff
