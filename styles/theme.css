@@ -121,5 +121,10 @@ div#notice p {
         width: 100%;
         max-width: 100%;
     }
+    input {
+        height: 50px;
+        padding: 0px !IMPORTANT;
+        border-radius: 0px  !important;
+    }
   }
   
